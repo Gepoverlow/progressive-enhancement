@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +14,22 @@
   </head>
   <body>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      section {
+        padding: 2em 0;
+      }
+
+      section > h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+
       body {
         max-width: 90%;
         margin: auto;
@@ -35,7 +57,7 @@
 
       p {
         font-family: serif;
-        line-height: 32px;
+        line-height: 40px;
         font-size: 1.5vw;
         color: rgb(63, 60, 60);
       }
@@ -79,10 +101,23 @@
 
       header > h1 {
         background-color: yellow;
+        text-align: center;
+        padding: 0.5em;
+      }
+
+      header > h2 {
+        padding: 1em 0;
+      }
+
+      header > figure {
+        text-align: center;
       }
 
       table {
         border-collapse: collapse;
+        margin: 1em 0;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       td,
@@ -106,6 +141,28 @@
 
       section {
         max-width: 100%;
+      }
+
+      #text-picture-one {
+        float: right;
+        width: 300px;
+        height: auto;
+        margin: 1em 1em 0 0;
+      }
+
+      #text-picture-two {
+        float: left;
+        width: 300px;
+        height: auto;
+        margin: 1em 1em 0 0;
+      }
+
+      blockquote {
+        font-size: 1.5em;
+      }
+
+      caption {
+        margin-top: 1em;
       }
     </style>
 
@@ -140,6 +197,11 @@
             >We are so sorry to hear your horse has run away. This is most
             unfortunate.</q
           >
+          <img
+            id="text-picture-one"
+            src="./pexels-anni-roenkae-2317711.jpg"
+            alt=""
+          />
           The farmer said,<q class="farmer">Maybe.</q> The next day the horse
           came back bringing seven wild horses with it, and in the evening
           everybody came back and said,<q class="villager"
@@ -151,6 +213,11 @@
           thrown and broke his leg. The neighbors then said,<q class="villager"
             >Oh dear, that’s too <mark class="bad">bad</mark>,</q
           >
+          <img
+            id="text-picture-two"
+            src="./pexels-bruno-thethe-1910225.jpg"
+            alt=""
+          />
           and the farmer responded,<q class="farmer">Maybe.</q> The next day the
           conscription officers came around to conscript people into the army,
           and they rejected his son because he had a broken leg. Again all the
@@ -193,7 +260,7 @@
           </tr>
           <tr>
             <td>Lose a horse</td>
-            <td><strong>Maybeeeee</strong></td>
+            <td><strong>Maybe</strong></td>
           </tr>
           <tr>
             <td>Win more horses</td>
