@@ -92,6 +92,18 @@
         text-align: center;
       }
 
+      #table tr:nth-child(even) {
+        background-color: #b6b5b5;
+      }
+
+      #table tr:nth-child(odd) {
+        background-color: white;
+      }
+
+      #table + tr {
+        font-weight: bold;
+      }
+
       section {
         max-width: 100%;
       }
@@ -108,7 +120,7 @@
       </figure>
     </header>
     <main>
-      <section id="preamble">
+      <section id="preamble-container">
         <h3>Preamble</h3>
         <ul>
           <li>Read this once</li>
@@ -119,7 +131,7 @@
 
       <hr />
 
-      <section id="story">
+      <section id="story-container">
         <h3>The Story</h3>
         <p>
           Once upon a time there was a Chinese farmer whose horse ran away. That
@@ -167,9 +179,9 @@
 
       <hr />
 
-      <section id="table">
+      <section id="table-contaier">
         <h3>Here is this dialog in the form of a table</h3>
-        <table style="caption-side: bottom">
+        <table id="table" style="caption-side: bottom">
           <caption>
             Table representing the farmer's philosophy.
           </caption>
@@ -181,7 +193,7 @@
           </tr>
           <tr>
             <td>Lose a horse</td>
-            <td><strong>Maybe</strong></td>
+            <td><strong>Maybeeeee</strong></td>
           </tr>
           <tr>
             <td>Win more horses</td>
@@ -200,7 +212,7 @@
 
       <hr />
 
-      <section id="conclusion">
+      <section id="conclusion-container">
         <h3>Conclusion</h3>
         <blockquote>
           <mark class="good">Good</mark> and <mark class="bad">Bad</mark> are
