@@ -8,12 +8,29 @@
   </head>
   <body>
     <style>
+      body {
+        max-width: 90%;
+        margin: auto;
+        background-image: url(./wall-gcbf088070_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+      }
       img {
         width: 500px;
         height: auto;
       }
       mark {
         background-color: transparent;
+        text-transform: capitalize;
+      }
+
+      .bad {
+        color: red;
+      }
+
+      .good {
+        color: green;
       }
 
       p {
@@ -47,6 +64,37 @@
       a:visited:hover {
         color: beige;
       }
+
+      q {
+        font-style: italic;
+      }
+
+      .villager {
+        color: #ff9900;
+      }
+
+      .farmer {
+        color: #6666ff;
+      }
+
+      header > h1 {
+        background-color: yellow;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 2px solid rgb(12, 11, 11);
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      section {
+        max-width: 100%;
+      }
     </style>
 
     <header>
@@ -76,18 +124,28 @@
         <p>
           Once upon a time there was a Chinese farmer whose horse ran away. That
           evening, all of his neighbors came around to commiserate. They said,
-          “We are so sorry to hear your horse has run away. This is most
-          unfortunate.” The farmer said, “Maybe.” The next day the horse came
-          back bringing seven wild horses with it, and in the evening everybody
-          came back and said, “Oh, isn’t that lucky. What a great turn of
-          events. You now have eight horses!” The farmer again said, “Maybe.”
-          The following day his son tried to break one of the horses, and while
-          riding it, he was thrown and broke his leg. The neighbors then said,
-          “Oh dear, that’s too <mark class="bad">bad</mark>,” and the farmer
-          responded, “Maybe.” The next day the conscription officers came around
-          to conscript people into the army, and they rejected his son because
-          he had a broken leg. Again all the neighbors came around and said,
-          “Isn’t that great!” Again, he said, “Maybe.” The whole process of
+          <q class="villager"
+            >We are so sorry to hear your horse has run away. This is most
+            unfortunate.</q
+          >
+          The farmer said,<q class="farmer">Maybe.</q> The next day the horse
+          came back bringing seven wild horses with it, and in the evening
+          everybody came back and said,<q class="villager"
+            >Oh, isn’t that lucky. What a great turn of events. You now have
+            eight horses!</q
+          >
+          The farmer again said,<q class="farmer">Maybe.</q> The following day
+          his son tried to break one of the horses, and while riding it, he was
+          thrown and broke his leg. The neighbors then said,<q class="villager"
+            >Oh dear, that’s too <mark class="bad">bad</mark>,</q
+          >
+          and the farmer responded,<q class="farmer">Maybe.</q> The next day the
+          conscription officers came around to conscript people into the army,
+          and they rejected his son because he had a broken leg. Again all the
+          neighbors came around and said,<q class="villager"
+            >Isn’t that great!</q
+          >
+          Again, he said, <q class="farmer">Maybe.</q> The whole process of
           nature is an integrated process of immense complexity, and it’s really
           impossible to tell whether anything that happens in it is
           <mark class="good">good</mark> or <mark class="bad">bad</mark> —
