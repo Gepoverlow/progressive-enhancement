@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 2em 0;
+}
+
+section > h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+body {
+  max-width: 90%;
+  margin: auto;
+  background-image: url(./images/wall-gcbf088070_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+img {
+  width: 60%;
+  height: auto;
+}
+mark {
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+li {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.bad {
+  color: red;
+}
+
+.good {
+  color: green;
+}
+
+p {
+  font-family: serif;
+  line-height: 40px;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  color: rgb(63, 60, 60);
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+a:hover {
+  background-color: rgb(80, 80, 88);
+  color: beige;
+  -webkit-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+a:visited {
+  color: green;
+}
+
+a:visited:hover {
+  color: beige;
+}
+
+q {
+  font-style: italic;
+}
+
+.villager {
+  color: #ff9900;
+}
+
+.farmer {
+  color: #6666ff;
+}
+
+header > h1 {
+  background-color: yellow;
+  text-align: center;
+  padding: 0.5em;
+}
+
+header > h2 {
+  padding: 1em 0;
+}
+
+header > figure {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td,
+th {
+  border: 2px solid rgb(12, 11, 11);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+#table tr:nth-child(even) {
+  background-color: #b6b5b5;
+}
+
+#table tr:nth-child(odd) {
+  background-color: white;
+}
+
+#table + tr {
+  font-weight: bold;
+}
+
+section {
+  max-width: 100%;
+}
+
+#text-picture-one {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 5px;
+}
+
+#text-picture-two {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: 5px;
+}
+
+blockquote {
+  font-size: 1.5em;
+}
+
+caption {
+  margin-top: 1em;
+}
+
+footer > p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  padding: 1em 1em;
+}
